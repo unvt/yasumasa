@@ -12,3 +12,9 @@ ruby yasumasa.rb
 ruby yasumasa.rb experimental_anno 15
 ```
 
+## Required tools
+- Ruby
+- curl
+- gzcat
+- tippecanoe-json-tool
+- GNU parallel

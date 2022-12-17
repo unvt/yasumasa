@@ -15,7 +15,7 @@ end
 
 def main(t, z)
   cmd = <<-EOS
-| parallel --line-buffer 'curl --silent {} | tippecanoe-json-tool'
+| parallel --line-buffer 'curl --fail --silent {} | tippecanoe-json-tool'
   EOS
   open(cmd, 'w') {|w|
     tile_urls(t, z) {|tile_url|
